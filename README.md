@@ -19,7 +19,6 @@ An **NLP Model** utilizing the power of **MPI Communicator** to implement a dist
 ```
 NLP-Distributed-System-MPI
 |-- Project.py    # Main Python script
-|-- requirements.txt                 # Dependencies for the project
 |-- twitter_training.csv             # Example dataset
 ```
 ---
@@ -28,7 +27,7 @@ NLP-Distributed-System-MPI
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/NLP-Distributed-System-MPI.git
+   git clone https://github.com/Abdelrhman-Ellithy/NLP-Distributed-System-MPI.git
    cd NLP-Distributed-System-MPI
    ```
 
