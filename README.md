@@ -18,14 +18,10 @@ An **NLP Model** utilizing the power of **MPI Communicator** to implement a dist
 
 ```
 NLP-Distributed-System-MPI
-|-- mpi_parallel_preprocessing.py    # Main Python script
+|-- Project.py    # Main Python script
 |-- requirements.txt                 # Dependencies for the project
-|-- README.md                        # Project Documentation
-|-- data/                            # Folder for datasets
-    |-- twitter_training.csv         # Example dataset
-|-- outputs/                         # Preprocessed results and logs
+|-- twitter_training.csv             # Example dataset
 ```
-
 ---
 
 ## ⚙️ Setup & Installation
@@ -65,18 +61,12 @@ NLP-Distributed-System-MPI
 
 ## 🚀 How to Run
 
-1. **Prepare your dataset**:
-   Place your dataset (e.g., `twitter_training.csv`) in the `data/` directory.
 
-2. **Run the MPI script**:
+1. **Run the MPI script**:
    ```bash
-   mpiexec -n <num_processes> python mpi_parallel_preprocessing.py
+   mpiexec -n <num_processes> python Project.py
    ```
    Replace `<num_processes>` with the number of parallel processes you want to use.
-
-3. **Output**:
-   - The preprocessed data and evaluation metrics will be printed to the console and saved in the `outputs/` directory.
-
 ---
 
 ## 🧹 Preprocessing Functions
@@ -103,25 +93,6 @@ NLP-Distributed-System-MPI
 
 - **Speedup**: Parallel processing significantly reduces preprocessing time for large datasets.
 - **Scalability**: Easily scale the system by increasing the number of processes.
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository.
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add some feature"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request.
 
 ---
 
